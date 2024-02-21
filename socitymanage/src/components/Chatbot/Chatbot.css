@@ -1,0 +1,83 @@
+.chatbot {
+    width: fit-content;
+    position: fixed;
+    /* padding: 10px; */
+    right: 10px;
+    bottom: 10px;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: none;
+}
+
+.crossicon {
+    position: fixed;
+    bottom: 274px;
+    right: 20px;
+    z-index: 999;
+    font-size: 1.5rem;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.crossicon:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.ChatIcon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    padding: 5px;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+
+.chatbot:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+
+.ChatIcon img {
+    width: 90%;
+    height: 90%;
+}
+
+
+@media (min-width:1025px) {
+    .chatbot {
+        display: block;
+    }
+}
+
+.react-chatbot-kit-chat-message-container {
+    padding: 0 17.5px 10px 17.5px;
+    /* overflow: scroll; */
+    height: calc(300px - 78px);
+}
+
+.react-chatbot-kit-chat-header {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.react-chatbot-kit-chat-inner-container {
+    height: 300px !important;
+}
+
+.react-chatbot-kit-chat-input {
+    width: 80%;
+
+}
+
+.react-chatbot-kit-chat-btn-send {
+    width: 18%;
+}

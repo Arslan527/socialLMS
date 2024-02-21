@@ -1,0 +1,147 @@
+@font-face {
+    font-family: "Fuggles";
+    src: url('../../fonts/Fuggles/Fuggles-Regular.ttf') format("truetype");
+}
+
+.nav-wrapper {
+    display: flex;
+    padding: 1% 5%;
+    justify-content: space-between;
+    border-bottom: 1px solid;
+    background: #111827;
+    color: #fcfcfc;
+    align-items: center;
+}
+
+.nav-logo-span {
+    font-size: 2em;
+    font-weight: bold;
+    /* font-family: 'Fuggles', cursive; */
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+}
+
+.nav-right,
+.nav-user__info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-right {
+    gap: 1rem;
+}
+
+.nav-right svg {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.noti {
+    position: relative;
+}
+
+.noti span {
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: red;
+    font-size: 0.6rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+}
+.notiHover{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.notiHover:hover{
+  background-color: #9BA4B5;
+}
+
+.NotiBox {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 300px;
+    height: 400px;
+    max-height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    z-index: 100;
+}
+
+.notification {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 10px;
+    border-bottom: 1px solid #111827;
+}
+
+.title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: black;
+    justify-content: center;
+}
+
+.title h2 {
+    margin: 0;
+}
+
+.notification .desc p {
+    margin: 0;
+    font-size: 1rem;
+    color: #111827;
+    font-weight: 400;
+    width: 165px;
+}
+
+.notification .desc p:nth-of-type(2) {
+    font-size: 0.8rem;
+    color: #111827;
+    font-weight: 400;
+}
+
+.notification .desc p strong {
+    font-weight: bold;
+}
+
+.notification img {
+    width: 50px;
+    height: 50px;
+
+}
+
+.nav-user__name {
+    margin: 0.8rem 0.5rem;
+    font-size: 0.9rem;
+}
+
+.nav-right>div:nth-of-type(2) {
+    display: none;
+}
+
+.nav-right button {
+    color: #fcfcfc;
+}
+
+@media (min-width:1025px) {
+    .nav-wrapper {
+        padding: 1% 2%;
+    }
+
+    .nav-logo-span {
+        font-size: 2.5rem;
+    }
+
+    .nav-right>div:nth-of-type(2) {
+        display: flex;
+    }
+}

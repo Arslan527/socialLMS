@@ -1,0 +1,65 @@
+.feed-box {
+    padding: 2% 3%;
+    border: 1px solid #dbdbdb;
+    border: 1px solid rgba(var(--b6a,219,219,219),1);
+    margin: 2% auto;
+    background: #fff;
+}
+
+.post__form-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.post__form-textarea {
+    text-align: center;
+    margin: 3% auto;
+}
+
+.post__form-textarea textarea {
+    resize: none;
+    height: 150px;
+    width: 94%;
+    font-size: 1rem;
+    padding: 3%;
+    border: 1px solid #dbdbdb;
+}
+
+.post__form-textarea textarea:focus{
+    outline: none;
+}
+
+.post__form-bottom {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0.3rem auto;
+}
+
+.post__form-bottom span{
+    margin: 1%;
+}
+
+.file-upload__icon{
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.post__form-bottom input[type="file"]{
+    display: none;
+}
+
+.post__publish-btn {
+    color: #fafafa;
+    background: #111827;
+    border: none;
+    border-radius: 5%;
+    cursor: pointer;
+    width: 30%;
+}
+
+@media (min-width:1025px) {
+    .post__publish-btn {
+        width: 10%;
+    }
+}

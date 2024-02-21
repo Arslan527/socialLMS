@@ -1,0 +1,13 @@
+body{
+    background: #fafafa;
+    color: #111827;
+    margin: 0;
+}
+
+#root{
+    height: 100vh;
+}
+
+.app{
+    height: 100%;
+}

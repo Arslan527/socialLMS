@@ -1,0 +1,23 @@
+.data-page__heading{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.data-page__header {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.create-user__btn {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    font-size: 1em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    background: black;
+    color: white;
+    cursor: pointer;
+}
